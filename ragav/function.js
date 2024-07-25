@@ -1,5 +1,4 @@
 // functions
-
 // named function 
 // unnamed or function expression or anonymous
 // iife
@@ -21,9 +20,13 @@
 
 })()
 
+raghu()
+
 function raghu() { // function declaration
     console.log('  i am a named function');
 }
+
+
 
 // calling function or invoking
 
@@ -33,7 +36,7 @@ var fexpression = function () {
 
 fexpression();
 
-console.log(typeof (fexpression))
+console.log(typeof(fexpression))
 
 
 
