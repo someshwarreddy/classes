@@ -3,7 +3,7 @@
 // unnamed or function expression or anonymous
 // iife
 // call back
-// high order
+// higher order
 // arrow or lamda
 // aync 
 // genrator function
@@ -21,9 +21,9 @@
 
 function raghu() { // function declaration
     // long run synchronous program to avoid this we use asynchrounous program using callbacks
-    for (let i = 0; i < 10000; i++) {
-        console.log(i)
-    }
+    // for (let i = 0; i < 10000; i++) {
+    //     console.log(i)
+    // }
 
 }
 
@@ -51,7 +51,7 @@ function b(callback) {
 
 b(a);
 
-// high order functions
+// higher order functions
 
 function c(x, y) {
     console.log(x, y)
@@ -74,6 +74,44 @@ async function api() {
 let obj = {
     name: function () { },
 }
+
+
+// purefunction
+
+function sum(a) {
+    return a + a;
+}
+
+var sum = sum(1);
+console.log(sum);
+
+// impurefunction 
+
+var c=20;
+function ss() {
+    return c+20;
+}
+ss();
+
+
+function lscope(a){
+    console.log(a);
+}
+
+lscope("lscope")
+
+function abc(paramone, paramtwo ) {
+    console.log(paramone, paramtwo, this.name);
+}
+
+abc(1,2);
+abc(a = 10, b=20);
+abc.call({name:"raghu"},1,2);
+
+var that = this;
+
+console.log(that);
+
 
 
 
