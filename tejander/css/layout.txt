@@ -1,0 +1,35 @@
+
+************************************ Layouts ***************
+float
+flex
+grid
+multi column
+postions
+*************************************************************
+
+writing css three types 
+
+********************************************************
+inline :
+which is directily targets the elemements this one has higest priority
+
+internal:
+which is write in head tag  second priority
+
+external :
+which is writes in external file links with html file by using link elemement third priority
+****************************************************
+
+float :
+float : left;
+float : right;
+
+flex:
+
+display:flex;
+
+flex-basis: auto , width, px, percentage;
+
+flex-grow: 1;
+
+flex-shirnk: 1;

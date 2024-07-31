@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .container {
+            display: flex;
+            border: 1px solid rgb(17, 151, 17);
+            width:1000px;
+        }
+
+        .child {
+            border: 1px solid rgb(136, 24, 24);
+            flex-basis: 250px;
+            margin:20px;
+            text-align: center;
+        }
+
+        .child-four {
+            flex-grow: 1;
+        }
+
+        .child-five {
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Nesciunt facilis deserunt aut delectus, laborum possimus molestiae? 
+             Natus nostrum deserunt qui, quaerat a iste, obcaecati commodi similique 
+             veritatis accusamus dolorem esse!</div>
+        <div class="child">2</div>
+        <div class="child">hi am content flex flex-basis wil allocate the width automatically based on my content</div>
+        <div class="child child-four">4</div>
+        <div class="child child-five">5</div>
+    </div>
+</body>
+</html>
