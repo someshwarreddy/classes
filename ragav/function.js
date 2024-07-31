@@ -108,10 +108,27 @@ abc(1,2);
 abc(a = 10, b=20);
 abc.call({name:"raghu"},1,2);
 
-var that = this;
+var that = "i am arrow";
 
-console.log(that);
+// console.log(that);
 
+
+let afunction = (a) => a
+
+console.log(afunction("0"))
+
+let ab = (a) => {
+    return a
+}
+
+console.log(ab("20"))
+
+function res (...a) { // restparam
+    a.forEach((element) => {console.log(element)})
+    console.log(a)
+}
+
+res(1,2,3)
 
 
 

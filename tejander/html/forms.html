@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/tejander/css/style.css">
+
+    <!-- internal css-->
+     <style>
+        form{
+            color: red;
+        }
+     </style>
+
+</head>
+
+<body>
+    <!-- inline css -->
+    <form style="display: flex; flex-direction: column; width:400px; color: blue; " > 
+
+        <label for="nametext">nametext</label>
+        <input type="text" id="nametext" value="somesh" name="nameoftext">
+
+        <label for="amemail">email</label>
+        <input type="email" id="amemail" value="somesh@gmail.com">
+
+        <label for="ampassword">password</label>
+        <input type="password" id="password">
+
+        <label for="number">number</label>
+        <input type="number" form="iamnumber">
+
+        <label for="amdate">date</label>
+        <input type="date"  id="amdate">
+
+        <!-- selecting single option -->
+         <label for="amradio1">radio1</label>
+         <input type="radio" id="amradio1" value="female" checked="true">
+
+         <label for="amradio2">radio2</label>
+         <input type="radio" id="amradio2" value="male">
+
+         <!-- <selecting the multipul values -->
+          <label for="checkone">c1</label>
+          <input type="checkbox" name="" id="checkone" value="true" checked="true">
+
+          <label for="checktwo">c2</label>
+          <input type="checkbox" name="" id="checktwo" value="false">
+
+          <label for="checkthree">c2</label>
+          <input type="checkbox" name="" id="checkthree" value="true">
+
+        <label for="buttn">button</label>
+        <input type="button" value="" id="buttn">
+
+        <label for="amsubmit">submit</label>
+        <input type="submit" id="amsubmit">
+
+        <label for="amreset">reset</label>
+        <input type="reset" id="amreset">
+
+        <input type="search" name="search" id="">
+        <input type="file" name="" id="">
+    </form>
+</body>
+
+</html>
