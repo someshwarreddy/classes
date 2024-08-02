@@ -4,26 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flex</title>
+    <!-- internal -->
     <style>
         .container {
             display: flex;
             border: 1px solid rgb(17, 151, 17);
             width:1000px;
+            /* width:100%; */
+            /* height: 600px; */
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start; /* y-axix*/
+            justify-content: center; /* x -axis*/
         }
 
         .child {
             border: 1px solid rgb(136, 24, 24);
-            flex-basis: 250px;
-            margin:20px;
+            /* flex-basis: 150px; */
+            /* padding: 10px; */
+            margin:10px;
             text-align: center;
+            /* min-height: 200px; */
+
         }
 
         .child-four {
-            flex-grow: 1;
+            /* flex-grow: 1; */
         }
 
         .child-five {
-            flex-shrink: 1;
+            /* flex-shrink: 1; */
+        }
+
+        .child {
+            flex: 0 100px ;
         }
     </style>
 </head>
