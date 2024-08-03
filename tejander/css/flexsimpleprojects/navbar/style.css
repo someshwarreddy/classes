@@ -1,0 +1,39 @@
+/* basic reset of elements margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1120px;
+    margin : 0 auto;
+ 
+}
+
+/*  css for navbar */
+
+.nav-header {
+    background-color: #0077b6
+}
+
+.navabr-menu {
+    padding: 0 10px 0 10px;
+    display: flex;
+    /* justify-content: space-around; */
+    line-height: 2;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    /* apply margin for list element*/
+    list-style: none;
+    flex: 1 1 auto;
+}
+
+.nav-link {
+    /* apply padding for navlink element */
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(233, 236, 236);
+}
