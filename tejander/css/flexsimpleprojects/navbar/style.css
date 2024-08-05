@@ -7,8 +7,15 @@
 
 .container {
     max-width: 1120px;
-    margin : 0 auto;
- 
+    margin: 0 auto;
+
+    /* margin-top: ;
+    margin-right: ;
+    margin-bottom: ;
+    margin-left: ; */
+
+    /* margin: 0 0 0 0 top right bottom left*/
+
 }
 
 /*  css for navbar */
@@ -18,7 +25,9 @@
 }
 
 .navabr-menu {
-    padding: 0 10px 0 10px;
+    /* padding: 10px 10px; top bottom, right left*/
+    padding: 10px;
+    /* allsides*/
     display: flex;
     /* justify-content: space-around; */
     line-height: 2;
@@ -36,4 +45,43 @@
     text-decoration: none;
     text-transform: capitalize;
     color: rgb(233, 236, 236);
+}
+
+/* .card {
+    min-height: 200px;
+    width: 300px;
+    border: 1px solid rgb(88, 28, 28);
+    margin: 20px 0 0 20px
+} */
+
+
+.card {
+    display: flex;
+    /* justify-content: center; */
+    border: 1px solid rgb(88, 28, 28);
+    flex-direction: column;
+    min-height:300px ;
+    width:300px;
+    padding: 10px;
+
+}
+
+.push{
+    margin: auto auto 0 auto;
+    /* flex: 1 1 auto; */
+    width:200px;
+}
+
+.img-conainer {
+    min-height: 200px;   
+}
+
+.responsive-img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
 }
