@@ -33,3 +33,27 @@ flex-basis: auto , width, px, percentage;
 flex-grow: 1;
 
 flex-shirnk: 1;
+
+
+***********************************************
+
+designed simple navbar using flex
+
+designed simple card using flex
+
+
+class selector denoted by .
+
+basic border
+
+list style
+
+padding and margin 
+
+line-height
+
+
+box model: 1 content
+           2 padding
+           3 border
+           4 margin

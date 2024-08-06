@@ -128,7 +128,11 @@ function res (...a) { // restparam
     console.log(a)
 }
 
-res(1,2,3)
+res(1,2,3);
+
+
+
+
 
 
 

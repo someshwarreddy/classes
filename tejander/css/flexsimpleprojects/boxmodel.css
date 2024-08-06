@@ -1,0 +1,14 @@
+/* element  selector */
+
+div {
+    width: 300px;
+    height: 300px;
+    padding: 10px 10px 10px 10px ;
+    border: 1px solid rgb(216, 40, 40);
+    margin: 20px 20px 20px 20px;
+   
+}
+
+.with-boxsizing {
+    box-sizing: border-box;
+}

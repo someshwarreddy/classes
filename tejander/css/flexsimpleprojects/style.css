@@ -54,6 +54,7 @@
     margin: 20px 0 0 20px
 } */
 
+/*  this is card css */
 
 .card {
     display: flex;
@@ -72,7 +73,7 @@
     width:200px;
 }
 
-.img-conainer {
+.img-container {
     min-height: 200px;   
 }
 
@@ -85,3 +86,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.lineheight {
+    line-height: 2;
+}
+
+/*  box model */
