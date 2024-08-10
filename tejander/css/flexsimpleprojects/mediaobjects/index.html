@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaobject</title>
+    <style>
+        /* reset the all elements margin padding to 0 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1130px;
+            margin: 0 auto;
+        }
+        .media-container {
+            display: flex;
+            border: 1px solid rgb(0, 153, 255);
+            max-width: 600px;
+            padding: 1%;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .media-container div {
+            flex: 0 0 49%;
+        }
+
+        .responsive-img {
+            max-width: 100%;
+        }
+
+        @media(max-width:426px){
+            .media-container div {
+            flex: 0 0 100%;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="media-container">
+            <div class="img-container">
+                <img src="/tejander/images/side.jpg" alt="img" class="responsive-img">
+            </div>
+            <div class="media-text">
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati cupiditate explicabo a esse,
+                    placeat aperiam eveniet perferendis laudantium incidunt debitis accusamus quas delectus molestiae
+                    illo iste, commodi porro totam possimus.</p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in cum odit harum! Veniam optio itaque
+                    fugit sequi dicta doloribus quasi minima quisquam incidunt deserunt officiis sint, sed veritatis
+                    perspiciatis!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

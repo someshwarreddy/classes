@@ -113,39 +113,50 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    box-shadow: 10px 10px 5px 0px rgba(255,255,255,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(255,255,255,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(255,255,255,0.75);
-
+    box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.75);
+    flex-direction: row;
     background-color: #323f4a;
 }
 
 .center-element {
     border-radius: 5%;
-    /* border: 1px solid rgb(34, 163, 206); */
-    width: 620px;
-    height: 420px;
     display: flex;
     padding: 1%;
     gap: 2%;
-    /* align-items: center;
-    justify-content: center; */
     background-color: #ffffff;
+    width: 620px;
+    height: 420px;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
 
 }
 
+/*  use flex-shrink , flex-grow , flex-basis, align-content , align-self to modify child elements*/
+
 .updated,
 .side-image {
-    flex-basis: 50%;
+    flex-basis: 49%;
     border-radius: 5%;
 }
 
 .updated {
     background-color: rgb(205, 56, 165);
     padding: 2%;
-    /* align-content: baseline */
+    align-content: center;
 }
 
 .side-image {
     background-color: rgb(85, 73, 82);
+}
+
+/*  target  the mobile device upto 426px  */
+@media (max-width:426px) {
+
+    .updated,
+    .side-image {
+        flex: 1 1 100%;
+        /* flex-basis:auto; */
+    }
 }

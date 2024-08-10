@@ -57,3 +57,11 @@ box model: 1 content
            2 padding
            3 border
            4 margin
+
+box-sizing 
+
+id selector 
+
+center elemement design 
+
+media query 
