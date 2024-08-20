@@ -11,8 +11,8 @@ console.log(iamGlobalVar);
 //function scope
 
 function scopeFunction() {
-    //var iamGlobalVar = 'i am local scope of function';
-    iamGlobalVar = 'i am local scope of function'
+    // var iamGlobalVar = 'i am local scope of function';
+     iamGlobalVar = 'i am local scope of function two' // reference is one address 
     console.log(iamGlobalVar)
 }
 scopeFunction();

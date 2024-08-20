@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: #d0f4de;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 20px 0 20px;
+            width: 400px;
+            min-height: 400px;
+            max-width: 500px;
+            border-radius: 5px;
+        }
+
+        .form-contact {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .form-contact input {
+            margin-bottom: 15px;
+            padding: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #52796f;
+            ;
+        }
+
+        #message,
+        .contact {
+            margin-bottom: 15px;
+        }
+
+        .names {
+            display: flex;
+            justify-content: space-evenly;
+            gap:10px;
+        }
+        .names div input {
+            width: 99%;
+        }
+        .form-contact label, input {
+            text-transform: capitalize;
+        }
+        .submit {
+            margin-top: auto;
+            background-color: #52796f;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2 class="contact">Contact us</h2>
+        <form class="form-contact">
+            <div class="names">
+                <div>
+                    <label for="firstname">firstname *</label>
+                    <input type="text" name="firstname" id="firstname">
+                </div>
+                <div>
+                    <label for="lastname">lastname *</label>
+                    <input type="text" name="lastname" id="lastname">
+                </div>
+            </div>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email">
+            <label for="message">message</label>
+            <textarea name="message" id="message" rows="4"></textarea>
+            <input type="submit" value="submit" class="submit">
+        </form>
+    </div>
+</body>
+
+</html>

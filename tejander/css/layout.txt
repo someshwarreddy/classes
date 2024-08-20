@@ -65,3 +65,16 @@ id selector
 center elemement design 
 
 media query 
+
+arrtribute selector
+
+selector revision
+combinators
+units
+fonts 
+width
+text
+images
+specificity
+
+Layout grid column
