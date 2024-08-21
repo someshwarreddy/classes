@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --top-header-background:#fb8500;
+    --body-background: #fffcf2;
+    --menubar-background:#42a5f5
+}
+
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+
+    /* margin-top: ;
+    margin-right: ;
+    margin-bottom: ;
+    margin-left: ; */
+
+    /* margin: 0 0 0 0 top right bottom left*/
+
+}
+
+/*  css for navbar */
+
+.top-header {
+    background-color:var(--top-header-background)
+}
+
+.navabr-menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-header .navabr-menu {
+    padding: 5px;
+    justify-content: space-between;
+    
+}
+
+.top-header .contactpages {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-header .icons {
+    /* margin-left: auto; */
+}
+.top-header .contactpages .nav-item {
+    border-right: 2px solid #ffffff;
+    padding: 0 5px;
+}
+.nav-item {
+    /* apply margin for list element*/
+    list-style: none;
+    flex: 1 1 auto;
+}
+
+.nav-link {
+    /* apply padding for navlink element */
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(233, 236, 236);
+}
