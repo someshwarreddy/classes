@@ -5,29 +5,26 @@
 }
 
 :root {
-    --top-header-background:#fb8500;
-    --body-background: #fffcf2;
-    --menubar-background:#42a5f5
+    --top-header-background: #fb8500;
+    --body-background: #fefae0;
+    --menubar-background: #42a5f5;
+    --items-main-background: #ffffff;
 }
 
+body {
+    background-color: var(--body-background)
+}
 
 .container {
     max-width: 1120px;
     margin: 0 auto;
-
-    /* margin-top: ;
-    margin-right: ;
-    margin-bottom: ;
-    margin-left: ; */
-
-    /* margin: 0 0 0 0 top right bottom left*/
-
 }
 
 /*  css for navbar */
 
 .top-header {
-    background-color:var(--top-header-background)
+    background: var(--top-header-background);
+    opacity: 1;
 }
 
 .navabr-menu {
@@ -38,7 +35,7 @@
 .top-header .navabr-menu {
     padding: 5px;
     justify-content: space-between;
-    
+
 }
 
 .top-header .contactpages {
@@ -49,10 +46,12 @@
 .top-header .icons {
     /* margin-left: auto; */
 }
+
 .top-header .contactpages .nav-item {
     border-right: 2px solid #ffffff;
     padding: 0 5px;
 }
+
 .nav-item {
     /* apply margin for list element*/
     list-style: none;
@@ -64,4 +63,76 @@
     text-decoration: none;
     text-transform: capitalize;
     color: rgb(233, 236, 236);
+}
+
+.products-main {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid #ebede6;
+}
+
+.products {
+    background-color: var(--items-main-background);
+    padding: 10px;
+}
+
+.product-left-section {
+    flex: 1 70%;
+}
+
+.product-right-section {
+    flex: 1 30%;
+}
+
+.media-container {
+    display: flex;
+    padding: 1%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.media-container div {
+    flex: 1 1 auto;
+}
+
+.responsive-img {
+    max-width: 100%;
+}
+
+/* cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
+.card {
+    flex: 1;
+    flex: 1 23%;
+    /* max-width:180px; */
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(88, 28, 28);
+    flex-direction: column;
+    min-height: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+.push {
+    margin: auto auto 0 auto;
+    /* flex: 1 1 auto; */
+    /* width: 200px; */
+}
+
+
+
+.responsive-img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
