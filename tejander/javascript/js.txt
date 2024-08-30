@@ -1,0 +1,22 @@
+browser loads the script file
+
+browser engine interprete the code 
+
+engine converts the code into machine code
+
+engine excute the machine code
+
+
+**** uses of js ****
+
+Event handling
+
+integarating Dom api 
+
+used to handle fetch api and setimout asynchronous programming
+
+used to devlope gamming 
+
+used to devlope backend apis by using node js
+ 
+used to devlope hybrid mobile apps by ionic platform
