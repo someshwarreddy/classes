@@ -31,3 +31,5 @@ console.log(typeof(a))
 
 
 let b =10;
+
+// javscript is a dynamic type casting

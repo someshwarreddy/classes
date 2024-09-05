@@ -17,3 +17,15 @@ function bb() {
 }
 
 bb();
+
+// default value of var is undefined
+// default value of let is nothing
+
+// let b; //Uncaught SyntaxError: Identifier 'b' has already been declared
+
+var a; // var allows redclaration of same variable
+console.log(b)
+
+b = 20; // let can allow assign diffrent type data to same varibale
+
+console.log(b)

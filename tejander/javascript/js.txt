@@ -1,3 +1,19 @@
+Introduction
+Syntax
+control Structures
+Functions
+Object and arrays
+DOM manipulation
+Events & handling
+Advanced Functions
+Asnchrounous js
+Working with API
+OOP
+Es6
+Error handling
+working with browser
+regular expressions
+
 browser loads the script file
 
 browser engine interprete the code 
@@ -20,3 +36,14 @@ used to devlope gamming
 used to devlope backend apis by using node js
  
 used to devlope hybrid mobile apps by ionic platform
+
+introduction :
+what is js
+working of js
+devlopement environment
+
+syntax :
+var , let , const,
+datatypes
+operators:
+arthamatic , logical , ralational, 
