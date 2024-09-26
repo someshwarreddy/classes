@@ -42,7 +42,9 @@ console.log(typeof (fexpression))
 //callback
 
 function a() {
-    console.log("hi")
+    setTimeout(() => {
+        console.log("hi");
+      }, 1000);  
 }
 
 function b(callback) {
@@ -129,6 +131,29 @@ function res (...a) { // restparam
 }
 
 res(1,2,3);
+
+
+
+var objj = {
+    fun: () => {
+        console.log("hi");
+    }
+}
+objj.fun();
+console.log(abv)
+var abv ;
+
+// we dont use function keyword
+arrowFunction('i am aarow argument')
+var arrowFunction = (a) => {
+ console.log(a)
+} 
+
+
+
+
+
+
 
 
 

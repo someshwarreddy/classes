@@ -42,10 +42,15 @@ for(var i = 0; i < 10;) {
     }
     
 }
+var con = 1;
+while(con > 0) { // here we are assigning i value for every iteration
+    console.log('true block');
+    con--; // 2 , 3, 4, 5
 
-while(l) {
-    console.log("hi")
-    break;
+// While(i=0) it is false
+// While(1) it is infinite loop;
+// While (true) it is infinite loop;
+// While(i=1) it is infinite loop;
 }
 
 var z = 3;
@@ -71,3 +76,13 @@ default:
 }
 
 
+var increment = 0;
+increment++;
+increment++;
+console.log(increment++);
+increment--;
+increment--;
+increment--;
+console.log(increment--);
+
+1 ? console.log('yes ternary '):console.log('no ternary')
