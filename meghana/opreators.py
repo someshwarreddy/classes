@@ -57,3 +57,44 @@ print(a<b or a>b)
 print(a>b or b<a)
 tr = True
 print(  not tr)
+
+# relational , logical, assignment, arthamatic
+# bitwise operators
+
+print(a | b)
+print (a & b)
+a = 5
+b=3
+print(a | b)
+print(~a)
+
+a = 5   #0 1 0 1
+b = 7   #0 1 1 1
+
+print(f" hi i am 5 {a & b}")
+
+print(a | b)
+
+print (a ^ b)
+
+print( a >> 1)
+
+print(a << 1)
+
+print(~ a)
+
+a = a+5 # 10 oid value
+a = 100 # new value
+a = 'meghana'
+d = "someshwar"
+d = 9
+print(f"i am a + 5 {a}")
+#  a will be 10
+
+d+=5 # short form of a + 5  10 + 5
+print(f" i am a+=5 {d}") 
+d&=5
+print(d)  # 1 1 1 0  #  0 1 0 1
+
+
+
