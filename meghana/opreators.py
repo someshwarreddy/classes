@@ -98,3 +98,14 @@ print(d)  # 1 1 1 0  #  0 1 0 1
 
 
 
+# opeartors  
+
+a = 1
+
+print(a * 1) 
+print(a * 2) 
+print(a * 3)
+print(a * 4) 
+print(a * 5) 
+print(a * 6) 
+print(a * 7)  
