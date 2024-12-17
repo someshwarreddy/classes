@@ -56,12 +56,32 @@ yes = True # boolean
 if False:
    #pass
     print("hi every thing will be okay") #this one belongs to if local one (scope)
-elif False:
+elif True:
     print("i am meghana i will achive what ever i want ")
-elif False:
+elif True:
     print("i am meghana 2 i will achive what ever i want ")
-elif False:
+elif True:
     print("i am meghana 3 i will achive what ever i want ")
 else:
     print("i am going to get every things soon")
+    
 
+a = "meghana"
+b = "meghanafff"
+if (a==b):
+    print("i if block")
+elif (a>b):
+    print("i am elif block")
+else:
+    print("i am else block ")
+
+animal = "Eagleeeeee"
+match animal:
+    case "Eagle":
+        print("Bird")
+    case "Lion":
+        print("Mammal")
+    case "Python":
+        print("Reptile")
+    case _:
+        print("Unknown Class")
