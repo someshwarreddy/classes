@@ -54,3 +54,4 @@ var dd = a(10);
 
 var cc = dd(5);
  console.log(cc)
+

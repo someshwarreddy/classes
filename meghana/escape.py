@@ -17,5 +17,5 @@ print(f"i am double quote return  {text}")
 text = "MEGHANA \'doctor\'"
 print(f"(4)i am single quote return  {text}")
 
-text = "meghana \f     doctor"
+text = "meghana \f doctor"
 print(f"(5)i am function  return  {text}")

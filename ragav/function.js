@@ -10,8 +10,6 @@
 // method function
 // pure functions
 // impure functions
-
-
 //iife
 
 (function () {
@@ -24,7 +22,6 @@ function raghu() { // function declaration
     // for (let i = 0; i < 10000; i++) {
     //     console.log(i)
     // }
-
 }
 
 raghu()
@@ -36,6 +33,7 @@ var fexpression = function () {
 }; // function expression
 
 fexpression();
+
 
 console.log(typeof (fexpression))
 
@@ -132,13 +130,12 @@ function res (...a) { // restparam
 
 res(1,2,3);
 
-
-
 var objj = {
     fun: () => {
         console.log("hi");
     }
 }
+
 objj.fun();
 console.log(abv)
 var abv ;
