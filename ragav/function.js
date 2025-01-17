@@ -141,12 +141,14 @@ console.log(abv)
 var abv ;
 
 // we dont use function keyword
-arrowFunction('i am aarow argument')
-var arrowFunction = (a) => {
- console.log(a)
-} 
+// arrowFunction('i am aarow argument')
+// var arrowFunction = (a) => {
+//  console.log(a)
+// } 
 
+console.log(bbb)
 
+let bbb;
 
 
 
