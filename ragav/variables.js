@@ -3,7 +3,7 @@ var namee = 'Ragav';
 console.log(namee);
 
 var rohit;
-console.log(rohit); 
+console.log(rohit);
 // var we have undefined value in creation phase
 
 let age;
@@ -12,11 +12,11 @@ console.log(age);
 
 
 console.log(ragage);
-var ragage = 10 ;
+var ragage = 10;
 
 console.log(ragage);
 
-let letage =10;
+let letage = 10;
 console.log(letage);
 
 
@@ -34,8 +34,8 @@ var newvar = 20;
 // let letage = 10;
 // let is not allowed to redeclaration
 
-letage= "rohit";
-letage =  true
+letage = "rohit";
+letage = true
 letage = null
 letage = undefined
 console.log(letage);
@@ -45,3 +45,53 @@ newvar = true;
 newvar = null;
 newvar = undefined;
 console.log(newvar);
+
+// var is a function scope
+
+// var abc = 10;
+// let xyz = 20;
+
+// console.log(abc);
+
+// function abcd() {
+//     var abcde = 20;
+//     var abc = 30;
+//    let xyz = 400
+//     // console.log(xyz);
+//     console.log(abc);
+// }
+// // console.log(abcde); // Uncaught ReferenceError: abcde is not defined 
+// abcd();
+
+// // console.log(xyz);
+//  console.log(abc);  
+
+// {
+//     var abcccc = 100;
+//     let xyz = 200;
+//     let abcdfff= 4000
+// }
+// console.log(xyz);
+// console.log(abcccc);
+//  console.log(abcdfff); // Uncaught ReferenceError: abcdfff is not defined
+
+// let is block scope
+{
+    var abcccc = 100;
+    let xyz = 200;
+ 
+}
+
+console.log(abcccc);
+// we can accsees the var outside the block
+// console.log(xyz);
+
+// var is a function scope
+
+function abc() {
+    var a = 10;
+    let b = 20;
+}
+// we can not access the var and let outside the function
+console.log(a);
+console.log(b);
