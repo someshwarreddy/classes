@@ -79,19 +79,30 @@ console.log(newvar);
 {
     var abcccc = 100;
     let xyz = 200;
- 
-}
 
-console.log(abcccc);
+}
+// console.log("hi i am block scoped" + xyz);
+
+console.log("hi i am not block scoped only function scope" + abcccc);
 // we can accsees the var outside the block
 // console.log(xyz);
 
 // var is a function scope
-
 function abc() {
     var a = 10;
     let b = 20;
 }
 // we can not access the var and let outside the function
-console.log(a);
-console.log(b);
+// console.log("i am function scope"+ a);
+// console.log(b);
+
+for (var i = 0; i < 10; i++) {
+    setTimeout(function () {
+        alert(i);
+    }, 0);
+}
+
+
+
+
+
