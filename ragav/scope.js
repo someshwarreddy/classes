@@ -4,20 +4,22 @@
 // lexical scope
 // closure scope
 
-var iamGlobalVar = ' globalvar';
-
+var iamGlobalVar = 'globalvar';
 console.log(iamGlobalVar);
 
 //function scope
 
 function scopeFunction() {
+var iamGlobalVar = 'globalvar';
+
     // var iamGlobalVar = 'i am local scope of function';
      iamGlobalVar = 'i am local scope of function two' // reference is one address 
     console.log(iamGlobalVar)
 }
 scopeFunction();
-console.log(iamGlobalVar);
 
+console.log(iamGlobalVar);
+console.log(iamGlobalVar);
 //block scope  
 
 {

@@ -102,6 +102,13 @@ for (var i = 0; i < 10; i++) {
     }, 0);
 }
 
+if(true){
+    var a = 10;
+    let b = 20;
+}
+
+
+var global = 'global';
 
 
 
