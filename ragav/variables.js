@@ -2,12 +2,13 @@
 var namee = 'Ragav';
 console.log(namee);
 
-var rohit;
 console.log(rohit);
+var rohit;
 // var we have undefined value in creation phase
 
 let age;
-console.log(age);
+
+
 // let we dont have have undefined value in creation phase
 
 
@@ -18,8 +19,7 @@ console.log(ragage);
 
 let letage = 10;
 console.log(letage);
-
-
+letage = 20; 
 // const constage ; Uncaught SyntaxError: Missing initializer in const declaration 
 
 const constage = 10;
@@ -54,13 +54,13 @@ console.log(newvar);
 // console.log(abc);
 
 // function abcd() {
-//     var abcde = 20;
-//     var abc = 30;
+//     var abcde = 20
+//      abc= 40;
 //    let xyz = 400
 //     // console.log(xyz);
 //     console.log(abc);
 // }
-// // console.log(abcde); // Uncaught ReferenceError: abcde is not defined 
+// // console.log(abc); // Uncaught ReferenceError: abcde is not defined 
 // abcd();
 
 // // console.log(xyz);
@@ -96,11 +96,11 @@ function abc() {
 // console.log("i am function scope"+ a);
 // console.log(b);
 
-for (var i = 0; i < 10; i++) {
-    setTimeout(function () {
-        alert(i);
-    }, 0);
-}
+// for (var i = 0; i < 10; i++) {
+//     setTimeout(function () {
+//         alert(i);
+//     }, 0);
+// }
 
 if(true){
     var a = 10;

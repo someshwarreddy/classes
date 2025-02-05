@@ -35,4 +35,10 @@ fn = function () {}
 console.log(typeof (fn));
 console.log(typeof (Infinity));
 
+// data types
+// heap and call stack
+//  macro task and micro task
+// excution context
+
+// hoisting is a mechanism where variables and function declarations are moved to the top( allocating memory) of their scope before code execution.
 
