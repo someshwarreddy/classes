@@ -25,21 +25,21 @@ So, 165 meters is approximately 541.34 feet.
 """
 print(triple )
 
-print(single[1])
+print(" i am slicing with index\t"+ single[1])
 
-print(len(single)) # finding length of string
+print("finding lengthof string",len(single)) # finding length of string
 
-print(single[-1])
-print(single[-2])
+print("finding index position character \t" + single[-1])
+print("finding index \t" +single[-2])
 
 #slicing 
 #if you want a substring from the a string mention the index staring postion and end postion.
 
-print(single[0:6]) 
-print(single[:6]) 
-print(single[:-0]) 
-print(single[-5:-1])
-print(single[0::4])
+print("slicing"+ single[0:6]) 
+print("slicing" + single[:6]) 
+print("slicing" + single[:-0]) 
+print("slicing of negative\t"+ single[-5:-1])
+print("slicing of negative \t"+ single[0::4])
 
 print(single.capitalize())
 print(single.title())
@@ -59,6 +59,6 @@ result = " ".join(words)  # Joins the list with spaces
 print(result)  # Outputs 'apple banana cherry'
 
 
-string = "someshwar"
+string = "someshwar \t"
 print(f"hi {string + single}")  # Outputs: someshwar hi
 #Here, {string} is replaced with the value of the string variable.

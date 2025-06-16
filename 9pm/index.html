@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angular Directives and Pipes Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .example {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .example h2 {
+      margin-top: 0;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Angular Directives and Pipes Examples</h1>
+
+  <!-- ngIf Directive Example -->
+  <div class="example">
+    <h2>1. ngIf Directive</h2>
+    <div *ngIf="isLoggedIn">
+      <p>Welcome, user!</p>
+    </div>
+    <pre><code>&lt;div *ngIf="isLoggedIn"&gt;Welcome, user!&lt;/div&gt;</code></pre>
+  </div>
+
+  <!-- ngFor Directive Example -->
+  <div class="example">
+    <h2>2. ngFor Directive</h2>
+    <ul>
+      <li *ngFor="let product of products">{{ product.name }} - {{ product.price | currency }}</li>
+    </ul>
+    <pre><code>&lt;ul&gt;
+  &lt;li *ngFor="let product of products"&gt;{{ product.name }} - {{ product.price | currency }}&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+
+  <!-- ngClass Directive Example -->
+  <div class="example">
+    <h2>3. ngClass Directive</h2>
+    <button [ngClass]="{'active': isActive, 'disabled': !isActive}">Click Me</button>
+    <pre><code>&lt;button [ngClass]="{'active': isActive, 'disabled': !isActive}"&gt;Click Me&lt;/button&gt;</code></pre>
+  </div>
+
+  <!-- ngStyle Directive Example -->
+  <div class="example">
+    <h2>4. ngStyle Directive</h2>
+    <div [ngStyle]="{'color': color, 'font-size': fontSize}">This text has dynamic styling.</div>
+    <pre><code>&lt;div [ngStyle]="{'color': color, 'font-size': fontSize}"&gt;This text has dynamic styling.&lt;/div&gt;</code></pre>
+  </div>
+
+  <!-- ngModel Directive Example -->
+  <div class="example">
+    <h2>5. ngModel Directive</h2>
+    <input [(ngModel)]="userName" placeholder="Enter your name" />
+    <p>Hello, {{ userName }}!</p>
+    <pre><code>&lt;input [(ngModel)]="userName" placeholder="Enter your name" /&gt;</code></pre>
+  </div>
+
+  <!-- ngSwitch Directive Example -->
+  <div class="example">
+    <h2>6. ngSwitch Directive</h2>
+    <div [ngSwitch]="userRole">
+      <div *ngSwitchCase="'admin'">Admin Dashboard</div>
+      <div *ngSwitchCase="'user'">User Dashboard</div>
+      <div *ngSwitchDefault>Guest Dashboard</div>
+    </div>
+    <pre><code>&lt;div [ngSwitch]="userRole"&gt;
+  &lt;div *ngSwitchCase="'admin'"&gt;Admin Dashboard&lt;/div&gt;
+  &lt;div *ngSwitchCase="'user'"&gt;User Dashboard&lt;/div&gt;
+  &lt;div *ngSwitchDefault&gt;Guest Dashboard&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <!-- ngContainer Directive Example -->
+  <div class="example">
+    <h2>7. ngContainer Directive</h2>
+    <ng-container *ngIf="isLoggedIn">
+      <p>Welcome back, user!</p>
+    </ng-container>
+    <pre><code>&lt;ng-container *ngIf="isLoggedIn"&gt;Welcome back, user!&lt;/ng-container&gt;</code></pre>
+  </div>
+
+  <!-- ngTemplateOutlet Directive Example -->
+  <div class="example">
+    <h2>8. ngTemplateOutlet Directive</h2>
+    <ng-template #template>
+      <p>This is a reusable template!</p>
+    </ng-template>
+    <div *ngTemplateOutlet="template"></div>
+    <pre><code>&lt;ng-template #template&gt;
+  &lt;p&gt;This is a reusable template!&lt;/p&gt;
+&lt;/ng-template&gt;
+&lt;div *ngTemplateOutlet="template"&gt;&lt;/div&gt;</code></pre>
+  </div>
+
+  <!-- ngComponentOutlet Directive Example -->
+  <div class="example">
+    <h2>9. ngComponentOutlet Directive</h2>
+    <ng-container *ngComponentOutlet="dynamicComponent"></ng-container>
+    <pre><code>&lt;ng-container *ngComponentOutlet="dynamicComponent"&gt;&lt;/ng-container&gt;</code></pre>
+  </div>
+
+  <!-- formControl / formControlName Example -->
+  <div class="example">
+    <h2>10. formControl & formControlName Directive</h2>
+    <form [formGroup]="myForm">
+      <input formControlName="username" placeholder="Username" />
+      <input formControlName="password" type="password" placeholder="Password" />
+    </form>
+    <pre><code>&lt;form [formGroup]="myForm"&gt;
+  &lt;input formControlName="username" placeholder="Username" /&gt;
+  &lt;input formControlName="password" type="password" placeholder="Password" /&gt;
+&lt;/form&gt;</code></pre>
+  </div>
+
+  <!-- ngPlural Directive Example -->
+  <div class="example">
+    <h2>11. ngPlural Directive</h2>
+    <div [ngPlural]="messagesCount">
+      <ng-template ngPluralCase="=0">No messages</ng-template>
+      <ng-template ngPluralCase="=1">One message</ng-template>
+      <ng-template ngPluralCase="other">{{ messagesCount }} messages</ng-template>
+    </div>
+    <pre><code>&lt;div [ngPlural]="messagesCount"&gt;
+  &lt;ng-template ngPluralCase="=0"&gt;No messages&lt;/ng-template&gt;
+  &lt;ng-template ngPluralCase="=1"&gt;One message&lt;/ng-template&gt;
+  &lt;ng-template ngPluralCase="other"&gt;{{ messagesCount }} messages&lt;/ng-template&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <!-- ngNonBindable Directive Example -->
+  <div class="example">
+    <h2>12. ngNonBindable Directive</h2>
+    <div ngNonBindable>
+      <p>{{ user.name }}</p> <!-- This will be displayed as plain text -->
+    </div>
+    <pre><code>&lt;div ngNonBindable&gt;
+  &lt;p&gt;{{ user.name }}&lt;/p&gt; 
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <!-- ngContent Directive Example -->
+  <div class="example">
+    <h2>13. ngContent Directive</h2>
+    <app-card>
+      <div>Card Content</div>
+    </app-card>
+    <pre><code>&lt;app-card&gt;
+  &lt;div&gt;Card Content&lt;/div&gt;
+&lt;/app-card&gt;</code></pre>
+  </div>
+
+  <!-- ngModelGroup Directive Example -->
+  <div class="example">
+    <h2>14. ngModelGroup Directive</h2>
+    <form #form="ngForm">
+      <div ngModelGroup="address">
+        <input [(ngModel)]="address.street" name="street" />
+        <input [(ngModel)]="address.city" name="city" />
+      </div>
+    </form>
+    <pre><code>&lt;form #form="ngForm"&gt;
+  &lt;div ngModelGroup="address"&gt;
+    &lt;input [(ngModel)]="address.street" name="street" /&gt;
+    &lt;input [(ngModel)]="address.city" name="city" /&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+  </div>
+
+  <!-- async Pipe Example -->
+  <div class="example">
+    <h2>15. async Pipe</h2>
+    <div>{{ userData$ | async }}</div>
+    <pre><code>&lt;div&gt;{{ userData$ | async }}&lt;/div&gt;</code></pre>
+  </div>
+
+  <!-- currency Pipe Example -->
+  <div class="example">
+    <h2>16. currency Pipe</h2>
+    <div>{{ product.price | currency:'USD' }}</div>
+    <pre><code>&lt;div&gt;{{ product.price | currency:'USD' }}&lt;/div&gt;</code></pre>
+  </div>
+
+  <!-- date Pipe Example -->
+  <div class="example">
+    <h2>17. date Pipe</h2>
+    <div>{{ currentDate | date:'short' }}</div>
+    <pre><code>&lt;div&gt;{{ currentDate | date:'short' }}&lt;/div&gt;</code></pre>
+  </div>
+
+  <!-- json Pipe Example -->
+  <div class="example">
+    <h2>18. json Pipe</h2>
+    <pre>{{ user | json }}</pre>
+    <pre><code>&lt;pre&gt;{{ user | json }}&lt;/pre&gt;</code></pre>
+  </div>
+
+</body>
+</html>

@@ -22,8 +22,10 @@ function raghu() { // function declaration
     // for (let i = 0; i < 10000; i++) {
     //     console.log(i)
     // }
-}
+    return a;
 
+}
+// 
 raghu()
 
 // calling function or invoking

@@ -45,7 +45,7 @@ print(len(products))
 
 ran = range(1, 10)
 
-print(range(1, 10))
+print(ran)
 
 
 list = [1,2,3,4,5]

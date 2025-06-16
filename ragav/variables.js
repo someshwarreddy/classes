@@ -19,7 +19,7 @@ console.log(ragage);
 
 let letage = 10;
 console.log(letage);
-letage = 20; 
+//letage = 20; 
 // const constage ; Uncaught SyntaxError: Missing initializer in const declaration 
 
 const constage = 10;
@@ -31,8 +31,8 @@ newvar = 10;
 var newvar = 20;
 // var allows redeclaration
 
-// let letage = 10;
-// let is not allowed to redeclaration
+ //let letage = 10;
+ //let is not allowed to redeclaration
 
 letage = "rohit";
 letage = true
@@ -48,32 +48,32 @@ console.log(newvar);
 
 // var is a function scope
 
-// var abc = 10;
-// let xyz = 20;
+var abc = 10;
+let xyz = 20;
 
-// console.log(abc);
+console.log(abc);
 
-// function abcd() {
-//     var abcde = 20
-//      abc= 40;
-//    let xyz = 400
-//     // console.log(xyz);
-//     console.log(abc);
-// }
-// // console.log(abc); // Uncaught ReferenceError: abcde is not defined 
-// abcd();
+function abcd() {
+    var abcde = 20
+     abc= 40;
+   let xyz = 400
+    // console.log(xyz);
+    console.log(abc);
+}
+ console.log(abc); // Uncaught ReferenceError: abcde is not defined 
+abcd();
 
-// // console.log(xyz);
-//  console.log(abc);  
+console.log(xyz);
+ console.log(abc);  
 
-// {
-//     var abcccc = 100;
-//     let xyz = 200;
-//     let abcdfff= 4000
-// }
-// console.log(xyz);
-// console.log(abcccc);
-//  console.log(abcdfff); // Uncaught ReferenceError: abcdfff is not defined
+{
+    var abcccc = 100;
+    let xyz = 200;
+    let abcdfff= 4000
+}
+console.log(xyz);
+console.log(abcccc);
+ console.log(abcdfff); // Uncaught ReferenceError: abcdfff is not defined
 
 // let is block scope
 {
