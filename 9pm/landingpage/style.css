@@ -8,6 +8,7 @@
     max-width: 1120px;
     margin: 0 auto;
 }
+
 .header-top {
     /* margin: 20px 0; */
     background-color: rgb(52, 108, 214);
@@ -15,6 +16,10 @@
 
 #logo {
     margin: 20px 0;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ffffff
 }
 
 .nav-bar,
@@ -22,7 +27,7 @@
     display: flex;
 }
 
-.nav-bar{
+.nav-bar {
     justify-content: space-between;
 }
 
@@ -37,15 +42,87 @@
     margin: 20px;
 }
 
-.nav-bar .nav-list .nav-item , #logo{
-    
-    text-decoration:none;
+.nav-bar .nav-list .nav-item {
+
+    text-decoration: none;
     text-transform: capitalize;
     color: #ffffff;
     font-size: 20px;
 }
 
 .sign-up {
-    background:black;
+    background: rgb(3, 36, 59);
     padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.skillboost-section {
+    background-color: #3a4ee8;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    padding: 30px 0;
+    height: 300px;
+}
+
+.heading-jumbo {
+    font-size: 5rem;
+}
+
+.m-b{
+    margin-bottom: 20px;
+
+}
+
+.boost-learn {
+    font-size: 2rem;
+}
+.button {
+    padding: 20px 30px;
+    /* border-color: rgb(223, 255, 127); */
+    background: #e86b3a;
+    border: unset;
+    border-radius: 5px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.boost-parent {
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+    text-align: center;
+
+}
+
+.card {
+    padding: 20px 0;
+    background-color: aquamarine;
+    min-height: 260px;
+    /* width: 250px; */
+    border-radius: 5px;
+    margin-top: 5px;
+    flex: 1;
+    text-align: center;
+}
+
+.cards-section {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;;
+    margin-bottom: 20px;
+}
+.features {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.platform {
+    display: flex;
+    justify-content: center;
+    background: #3078e5;
+    padding: 30px 0;
+    color: #ffffff;
+    height: 200px;
 }
